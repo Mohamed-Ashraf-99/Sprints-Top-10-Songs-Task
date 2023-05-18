@@ -1,0 +1,134 @@
+* {
+
+    background-color: #532a7f;
+    font-family: "Archivo", sans-serif;
+    color: #fff;
+}
+
+.container {
+
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#logo {
+
+    font-size: 36px;
+
+}
+
+.logo {
+
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+
+h1 {
+
+    display: inline-flex;
+
+}
+
+p {
+
+    text-align: center;
+    line-height: 160%;
+    word-spacing: 8px;
+
+}
+
+
+.button {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.click {
+
+    background-color: #fff;
+    color: #532a7f;
+    flex-basis: 150px;
+    height: 60px;
+    font-size: 20px;
+    border: 0;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 1);
+
+}
+
+.parent {
+
+
+    width: 600px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1ftr);
+    margin: 20px auto;
+    border: 2px solid white;
+    padding-top: 10px;
+    padding-left: 20px;
+    visibility: hidden;
+    transition: transform 0.3s, top 0.s;
+}
+
+.open-Popup {
+
+    visibility: visible;
+    transform: translate(-1%, -20%) scale(1);
+
+}
+
+
+.parent div {
+
+    width: auto;
+    height: auto;
+    margin: 15px 10px;
+
+
+}
+
+span {
+
+    background-color: #9d59e6;
+    padding: 5px 7px;
+}
+
+/* Small */
+
+@media (min-width: 768px) {
+    .container {
+
+        width: 750px;
+
+    }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+
+        width: 970px;
+
+    }
+}
+
+/* Large */
+
+@media (min-width: 1200px) {
+    .container {
+
+        width: 600px;
+
+    }
+}
